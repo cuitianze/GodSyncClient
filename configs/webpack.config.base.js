@@ -17,6 +17,7 @@ export default {
         use: {
           loader: 'babel-loader',
           options: {
+            plugins: [['import', { libraryName: 'antd', style: 'css' }]],
             cacheDirectory: true
           }
         }
